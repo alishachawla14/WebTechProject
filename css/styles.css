@@ -1,0 +1,165 @@
+/* styles.css*/
+
+body {
+    background-image: url('../images/wall-tile.jpg');
+}
+
+#main {
+    width: 1178px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eee;
+  /*  opacity: .3; */
+    border: 1px solid #bbb;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #050;
+    width: 1000px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #050;
+    color: #eee;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+
+nav ul li:first-child {
+    margin-left: 250px;
+}
+
+div#container {
+    width: 100%;
+}
+
+div#content, div#right_bar {
+    float: left;
+    padding: 1.5em;
+    box-sizing:border-box;
+    opacity: 1;
+}
+
+div#right_bar {
+    width: 20em;
+    background-color: #797;
+    color: #eee;
+
+}
+
+div#content {
+    width: calc(100% - 20em);
+    background-color: #eee; 
+    background-color: #fff;
+    border: 1px solid #bbb;
+}
+
+a#logo {
+    display: block;
+    float: left;
+}
+
+#plants {
+    display: block;
+    float: left;
+  /*  width: calc(100vw - 1020px); */
+    height: 156px;
+    border-radius: 50%;
+}
+
+blockquote {
+    display: block;
+    float: left;
+    font-size: 1.5em;
+    padding: 0.5em;
+    width: 8em;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid #000;
+}
+
+label {
+    width: 9em;
+    clear: left;
+    display: block;
+    float: left;
+}
+#right_bar label, 
+#contact_form label {
+    width: 4em;
+}
+label#ta {
+    width: 9em;
+}
+input {
+    clear: right;
+}
+
+
+
+/* utility */
+div.clear {
+    width: 100%;
+    float: none;
+    clear: both;
+}
+
+img.left, img.right {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    filter: saturate(25%);
+    width: 400px;
+}
+
+img.right {
+    float: right;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+img.left:hover, img.right:hover {
+    filter: saturate(100%);
+}
+
+#social_box img {
+    width: 50px;
+}
+
+#number{
+font-size: 18px;
+}
+
+#location{
+    float: left;
+    width: 30px;
+    height: 40px;
+}
+
+#curriculum_heading{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#curriculum_title{
+    font-weight: bold;
+}
+
+#curriculum_table {
+    border: 1px solid #888;
+}
+#curriculum_table td {
+    border: 1px solid #ccc;
+    padding-left: 1em;
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Babson Financial Literacy Project</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
+    </head>
+    <body>
+        <div id="main">
+            <a href="index.html" id="logo"><img src="images/BabsonFinancialLogo.png" alt="Babson Financial Logo"></a>
+            <img id="plants" src="images/financial-square.jpg" alt="Plants image">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="students.html">Students</a></li>
+                    <li><a href="schools.html">Schools</a></li>
+                    <li><a href="curriculum.html">Curriculum</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                </ul>
+            </nav>
+            <div id="container">
+                <div id="content">
+                    <h1 id="number">Phone Number: </h1> 510-585-6607
+                    <h1 id="number">Email Address: </h1> achawla3@babson.edu 
+                    <h1 id="number">Address:</h1> 
+                    <a href="https://maps.babson.edu/?id=126#!ct/34551,19430,19429,8075,19431,19432,19433,19434,23863,23864,23865?s/"> <img id="location" src="images/location.png"> </a> <br> 231 Forest St, Babson Park, MA 02457
+                    <h1 id="number">Feedback Form:</h1> 
+              <!--  </div> -->
+                        <form id="contact_form" action="https://oim-apis.herokuapp.com/form2" method="post">
+                            <label for="name"> Name: </label>
+                            <input type="name" placeholder="Name" id="pw" />
+                            <br/>
+                            <br/>
+                            <div> 
+                                Is this your first visit to the website: <br>
+                                <input type="radio" name="selecton" id="Yes" value="Yes">
+                                <label for="Yes">Yes</label>
+                                <br><input type="radio" name="selection" id="No" value="No">
+                                <label for="No">No</label>
+                                </label>
+                            </div>
+                            <br/>
+                            <div> 
+                                Were you able to find what you needed?<br>
+                                <input type="radio" name="selecton" id="Yes" value="Yes">
+                                <label for="Yes">Yes</label>
+                                <br><input type="radio" name="selection" id="No" value="No">
+                                <label for="No">No</label>
+                                </label>
+                            </div>
+                            <div>
+                                <br/>
+                                <label for="comments" id="ta"> If you did not find what you needed, please tell us what info you were seeking? </label>
+                            </div>
+                            <div> 
+                                <textarea
+                                id="comments"
+                                name="comments"
+                                rows="5"
+                                cols="25"
+                                ></textarea>
+                                    <br><label></label><input type="submit" name="signup">
+                            </div>
+                        </form>
+                </div>
+                <div id="right_bar">
+                    Keep in Touch! 
+                    <form method="post" action="https://oim-apis.herokuapp.com/">
+                    <label for="name"></label>
+                    <input name="name" id="name" placeholder="Name"><br>
+                    <label for="email"></label>
+                    <input name="email" id="email" placeholder="Email Address">
+                    <label for ="phonenumber"></label>
+                    <input name="phonenumber" id="phonenumber" placeholder="Phone Number">
+                    <div> 
+                        Occuptation:<br>
+                        <input type="radio" name="occupation" id="Student" value="Student">
+                        <label for="Student">Student</label><br>
+                        <input type="radio" name="occupation" id="School" value="Educator">
+                        <label for="School">Educator</label>
+                        </label>
+                    </div>
+                    <label></label><input type="submit" name="signup">
+                    </form>
+                </div>
+                <br/>
+
+        <br/>
+            </div>
+            <div class="clear"></div>
+            <footer>&copy; 2022 Babson Financial Literacy Project</footer>
+        </div>
+    </body>
+</html>
