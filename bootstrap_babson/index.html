@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <title>Babson Financial Literacy Project</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" active href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="students.html">Students</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="schools.html">Schools</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="curriculum.html">Curriculum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sitemap.html">Site Map</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+
+                <a href="index.html" style="width:85%;"><img style="width: 100%;" src="images/BabsonFinancialLogo.png" alt="Babson Financial"></a>
+
+              <a href="index.html" style="width:15%;"><img  style="width: 100%; border-radius: 50%;" src="images/financial-square.jpg" alt="Babson Financial"></a>
+
+        </div>
+        <div class="row">
+            <div class="col-md-8 white-bg">
+                <p><img src="images/empty_class_640.jpg" alt="class" class="left">Welcome to the Babson Financial Literacy Project's official website, we are so happy you are here. The Babson Financial Literacy Project is part of Babson's Finance Association. Our mission is to bridge the gap in financial literacy.
+                </p><p>We hope to do this by conducting financial literacy workshops to individuals in socioeconomically disadvantaged communities in the Greater Boston area. Additionally, we hope to conduct these workshops at colleges which Babson has a collaboration with.</p>
+
+                <p>We anticipate to conduct these workshops at Olin and Wellesely College as these are the colleges we are in contact with. Babson College, being a top tier, all business school, has amazing resources which their students are equipt with.<img src="images/full_class_640.jpg" alt="class" class="right"> Babson students will apply to this program and then have to undergo several trainings conducted by Professors within the Finance Department. Additonally, they will recieve a formal online training hosted by a local community college. Once these students have become certified Babson Financial Wellness Trainers, they will be on their journey to conducting these workshops at other colleges, nonprofit organizations, and schools within the greater Boston area.</p>
+
+                <p>We focus on teaching several different topics and have created a well rounded curriculum with a lot of support from the faculty at Babson. For more information, please refer to the curriculum tab of this website. We hope that any student who attends our workshop will be more educated about how to manage their money better and have a better understanding on how to be more independent in making financial decisions.<img src="images/piggy-bank_640.jpg" class="right" alt="piggy bank"><blockquote>"An investment in knowledge pays the best interest"</blockquote> A quote by Benjamin Franklin,"An investment in knowledge pays the best interest." We hope to implement this quote in the students who attend our workshops as it is important that they knowledge is power and knowledge within financial literacy will serve them well in the future. Additionally, we hope that those who are from socioeconomically disadvantaged communities will attend our workshops as we are providing resources and knowledge they may not have had the access to before.</p>
+
+                <p> We hope that this website has helpful resources, contact information, and ways to keep in touch with our team. Please make sure to sign up for our weekly newspaper to be up to date with upcoming events and highlights from past events. We want to thank you for visiting our website and joining this family. The team is very passionate about bridging the financial litercy gap and hope to continue spreading awareness to this issue.</p>
+
+            </div>
+            <div class="col-md-3 sidebar" id = "right_bar">
+              <div id="newsletter_box">
+                <h3>Newsletter</h3>
+                Sign up for our weekly newsletter
+                <form method="post" action="https://oim-apis.herokuapp.com/">
+                    <input name="email" id="email" placeholder="email address">
+                    <label></label><input type="submit" name="signup">
+                </form>
+            </div>
+            <div id="social_box">
+                <h3>Social media</h3>
+                <div>
+                    <a href="https://www.instagram.com/babsonfwp/" alt="Instagram"><img src="images/Instagram.png"></a>
+                    <a href="https://www.linkedin.com/company/babsonfinassoc/mycompany/"><img src="images/LinkedIn.png" alt="Linkedin"></a>
+                </div>
+            </div>
+            <br><br>
+            <div id="slideshow">
+                <h3>Financial Advice</h3>
+                <img id="slideImage" alt="slide" src="images/tiger1.jpg" style="width:272px; border: 2px solid #040;">
+                
+            </div>
+            <div id="calculator">
+                <h3>Student Loan Calculator</h3>
+                <label for="base">amount:</label><input id="base" name="base" value="100">
+                <label for="percentage">%:</label><input id="percentage" name="percentage" value="1">
+                <div id="percentage_output"></div>
+                <label for="years">years:</label><input type="number" min="1" max="30" step="1" id="years" name="years">
+                <input type="button" value="calculate" id="go">
+                <label>total cost:</label><div id="output" style="color: blue";></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12" id="footer">
+              &copy; 2022 Babson Financial
+            </div>
+          </div>
+      </div>
+      <div class=""></div>
+</body>

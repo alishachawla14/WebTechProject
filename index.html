@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/styles.css">
         <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
+        <script src="js/main.js" defer></script>
 
     </head>
     <body>
@@ -49,6 +50,22 @@
                             <a href="https://www.instagram.com/babsonfwp/" alt="Instagram"><img src="images/Instagram.png"></a>
                             <a href="https://www.linkedin.com/company/babsonfinassoc/mycompany/"><img src="images/LinkedIn.png" alt="Linkedin"></a>
                         </div>
+                    </div>
+                    <br><br>
+                    <div id="slideshow">
+                        <h3>Financial Advice</h3>
+                        <img id="slideImage" alt="slide" src="images/tiger1.jpg" style="width:272px; border: 2px solid #040;">
+                        
+                    </div>
+                    <br><br>
+                    <div id="calculator">
+                        <h3>Student Loan Calculator</h3>
+                        <label for="base">amount:</label><input id="base" name="base" value="100">
+                        <label for="percentage">%:</label><input id="percentage" name="percentage" value="1">
+                        <div id="percentage_output"></div>
+                        <label for="years">years:</label><input type="number" min="1" max="30" step="1" id="years" name="years">
+                        <input type="button" value="calculate" id="go">
+                        <label>total cost:</label><div id="output" style="color: blue";></div>
                     </div>
                 </div>
             </div>

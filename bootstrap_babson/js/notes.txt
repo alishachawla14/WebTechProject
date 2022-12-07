@@ -1,0 +1,75 @@
+/*  element variables */
+// input
+let amountEl = document.querySelector('#base');
+let percentageEl = document.querySelector('#percentage');
+let yearsEl = document.querySelector('#years');
+let percentageOutputEl = document.querySelector('#percentage_output');
+// action
+let buttonEl = document.querySelector('#go');
+//output
+let outputEl = document.querySelector('#output');
+let bodyEl = document.querySelector('body');
+/*  application variables  */
+
+/* handlers */
+buttonEl.addEventListener('click', studentClick);
+console.log(amountEl);
+amountEl.addEventListener('focus', focusBlue, true);
+amountEl.addEventListener('blur', blurWhite, true);
+percentageEl.addEventListener('blur', percentageBlur, blur);
+/*Event Listener used is focus and blur. I found this online with a list/table of other EventListners and
+thought it is a good idea to incorporate it.*/
+/*Essentially, the focus handler is to highlight the textbox that a user clicks on when typing something and 
+a blur handler is to unhighlight the textbox when the user clicks out of it.*/
+
+/* functions */
+
+function percentageBlur(event) {
+    let percentageValue = event.target.value;
+    let outputString = '';
+    if(percentageValue === '4.99') {
+        outputString = 'This is the federal standard';
+    } else {
+        outputString = 'The federal standard is 4.99';
+    }
+    percentageOutputEl.innerText = outputString;
+}
+function focusBlue(event) {
+    event.target.style.backgroundColor = 'lightblue';
+}
+
+function blurWhite(event) {
+    event.target.style.backgroundColor = 'white';
+}
+
+function studentClick() {
+ //   console.log();
+    let amount = amountEl.value;
+    let percentage = percentageEl.value;
+    let years = yearsEl.value;
+    let total = amount;
+    for(i=0; i<years; i++) {
+        console.log(total);
+        total = (total * ((percentage / 100) + 1));
+        console.log(total);
+    }
+    outputEl.innerText = total;
+}
+
+function noRightClick(event) {
+    event.preventDefault();
+    alert('This site is copyrighted, please respect our content');
+    return false;
+}
+/*I tried to make the above function work but it doesn't work*/
+
+function yesRightClick(event) {
+    return true;
+}
+
+function copyHandler(event) {
+    let outputValue = outputEl.innerText;
+    event.clipboardData.setData('text/plain', 'debt total: '+ outputValue + ' - visit Student Debt Calculator');
+    event.preventDefault();
+}
+
